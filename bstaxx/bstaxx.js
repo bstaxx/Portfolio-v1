@@ -165,7 +165,7 @@ window.onload = function () {
 			title: 'College Park Aviation Museum',
 			image: "images/college_park_banner.png",
 			thumb: "images/college_park_thumb.png",
-			website: 'http://www.' + hostname + '/portfolio/school/IMD230/',
+			website: 'http://' + hostname + '/portfolio/school/IMD230/',
 			composition: 'HTML5, CSS3, Javascript, JQuery, Adobe Photoshop',
 			chartObject: {
 				title: { text: "Code Composition" },
@@ -196,7 +196,7 @@ window.onload = function () {
 			title: 'Briggs Express',
 			image: "images/briggs_express.jpg",
 			thumb: "images/briggs_express_thumb.jpg",
-			website: 'http://www.' + hostname + '/portfolio/bstaxx/school/briggs/index.php',
+			website: 'http://' + hostname + '/portfolio/bstaxx/school/briggs/index.php',
 			composition: 'HTML5, CSS3, Javascript, JQuery, PHP, Adobe Illustrator, Adobe Photoshop',
 			chartObject: {
 				title: { text: "Code Composition" },
