@@ -1,0 +1,232 @@
+/******************************************************************
+===================================================================
+	`			"style.css"
+===================================================================
+******************************************************************/
+
+
+
+/******************************************************************
+
+				GENERAL SYLES
+
+******************************************************************/
+html, body{ 
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: black;
+}
+
+#wrapper {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	overflow: auto;
+}
+
+footer {
+	width: 100%;
+	min-height: 100px;
+	background: #333;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	text-align: center;
+}
+
+footer a:link { color: #ccc }
+footer a:hover { color: lightBlue }
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+
+/******************************************************************
+
+				CAROUSEL SYLES
+
+******************************************************************/
+
+#carouselContainer {
+	width: 800px;
+	height: 500px;
+	background: black;
+	margin: 30px auto 160px auto;
+	position: relative;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid #444;
+}
+
+	#carouselContainer #carousel {
+		width: 800px;
+		height: 500px;
+		position: relative;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+		#carouselContainer #carousel img {
+			width: 800px;
+			height: 500px;
+			display: inline-block;
+			float: left;
+			position: absolute;
+		}
+
+		
+		
+		
+		/* Image Change Animations
+		============================================================================*/
+		#carouselContainer #carousel .imgContainer {
+			-webkit-transition:-webkit-transform ease-in-out 1s;
+			-moz-transition:-moz-transform ease-in-out 1s;
+			-o-transition:-o-transform ease-in-out 1s;
+			transition:transform ease-in-out 1s;
+		}
+
+		#carouselContainer #carousel .previousImage {
+			-webkit-transform:translate(-800px, 0px);
+			-moz-transform:translate(-800px, 0px);
+			-o-transform:translate(-800px, 0px); 
+			transform:translate(-800px, 0px);
+		}
+		
+		#carouselContainer #carousel .nextImage {
+			-webkit-transform:translate(800px, 0px);
+			-moz-transform:translate(800px, 0px);
+			-o-transform:translate(800px, 0px); 
+			transform:translate(800px, 0px);
+		}
+		
+		#carouselContainer #carousel .currentImage {
+			-webkit-transform:translate(0px, 0px);
+			-moz-transform:translate(0px, 0px);
+			-o-transform:translate(0px, 0px); 
+			transform:translate(0px, 0px); 	
+		}
+
+	
+	/* Interface Styles & Animations
+	============================================================================*/
+	#carouselContainer .interface {
+		z-index: 10;
+		-webkit-transition:opacity ease-in-out 0.25s;
+		-moz-transition:opacity ease-in-out 0.25s;
+		-o-transition:opacity ease-in-out 0.25s;
+		transition:opacity ease-in-out 0.25s;
+		position: absolute;
+		cursor: default;
+	}
+
+	#carouselContainer #scrollbarContainer {
+		height: 30px;
+		width: 609px;
+		margin: 20px auto;
+		overflow: hidden;
+		border: 2px solid #aaa;
+		bottom: 30px;
+		left: 93.5px;
+	}
+
+		#carouselContainer #scrollbarContainer .button {
+			width: 30px;
+			height: 30px;
+			color: white;
+			float: left;
+			background: #000;
+		}
+
+		#carouselContainer #scrollbarContainer .button:hover{ background: #555 }
+			#carouselContainer #scrollbarContainer .button img { width: 100%; }
+		
+		#carouselContainer #scrollbarContainer #next{ padding: 0 5px; }
+		#carouselContainer #scrollbarContainer #prev{ padding: 0 5px; }
+		
+
+		#carouselContainer #scrollbarContainer #scrollbar{
+			width: 529px;
+			height: 30px;
+			overflow: hidden;
+			float: left;
+			background: #aaa;
+		}
+			#carouselContainer #scrollbarContainer #scrollbar #cursor {
+				width: 30px;
+				height: 30px;
+				background: #666;
+				position: absolute;
+			}
+	
+	#carouselContainer #pauseButton{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		left: 30px;
+		top: 20px;
+		padding: 10px;
+		background: black;
+		border-radius: 5px;
+		border: 1px #666 solid;
+	}
+	
+	#carouselContainer #scrollbarIndex{
+		position: absolute;
+		background: #000;
+		color: #ccc;
+		display: none;
+		overflow: hidden;
+		text-align: center;
+		top: 0;
+		z-index: 10;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	#carouselContainer #mainCounter {
+		overflow: hidden;
+		background: #000;
+		color: #ccc;
+		position: absolute;
+		right: 30px;
+		top: 20px;
+		z-index: 10;
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px #666 solid;
+	}
+
+/******************************************************************
+
+				Fade Functions
+
+******************************************************************/
+	
+.hover {
+	filter: alpha(opacity=100)!important;
+	opacity : 1!important; 
+}
+
+.opacity80 {
+	filter: alpha(opacity=80);
+	opacity : 0.80; 
+}
+
+.opacity70 {
+	filter: alpha(opacity=70);
+	opacity : 0.70; 
+}
+
+.opacity0 {
+	filter: alpha(opacity=0);
+	opacity : 0; 
+}
+

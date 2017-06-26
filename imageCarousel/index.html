@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Image Carousel Demo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="imageCarousel.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="carouselContainer">
+			<div id="carousel">
+				<img id="imgContainer1" class="imgContainer previousImage" src="images/image500.jpg" />
+				<img id="imgContainer2" class="imgContainer currentImage" src="images/image1.jpg" />
+				<img id="imgContainer3" class="imgContainer nextImage" src="images/image2.jpg" />
+			</div>
+			<div id='scrollbarContainer' class="interface opacity70">
+				<div id="prev" class="button" ><img src="images/back_arrow.png" alt="back" ></div>
+				<div id="scrollbar">
+					<div id="cursor"></div>
+				</div>	
+				<div id="next" class="button" ><img src="images/next_arrow.png" alt="next" ></div>
+			</div>
+			<div id='scrollbarIndex'><span id="scrollCounter" class="counter"></span></div>
+			<div id='mainCounter' class="counter interface opacity80"></div>
+			<img id='pauseButton' class="interface opacity70" src="images/pause_button.png" />
+		</div>
+		<footer>
+			<p>Brandon Anthony | Web Developer | email:  <a href="mailto:banthony0787@gmail.com?Subject=Image%20Carousel" >banthony0787@gmail.com</a> | iPhone:  (202) 701-7351</p>
+			<p>DISCLAIMER:  Images may be subject to copyright.</p>
+		</footer>
+	</div>
+	
+	<div id="images" style="display:none;">
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+		
+		
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image43.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+		
+		
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image43.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+		
+		
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image43.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+		
+		
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image43.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+		
+		
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image43.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+		
+		
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image43.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+		
+		
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image43.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+		
+		
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image43.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+		
+		
+		<li>images/image1.jpg</li>
+		<li>images/image2.jpg</li>
+		<li>images/image3.jpg</li>
+		<li>images/image4.jpg</li>
+		<li>images/image5.jpg</li>
+		<li>images/image6.jpg</li>
+		<li>images/image7.jpg</li>
+		<li>images/image8.jpg</li>
+		<li>images/image9.jpg</li>
+		<li>images/image10.jpg</li>
+		
+		<li>images/image11.png</li>
+		<li>images/image12.jpg</li>
+		<li>images/image13.jpg</li>
+		<li>images/image14.jpg</li>
+		<li>images/image15.jpg</li>
+		<li>images/image16.jpg</li>
+		<li>images/image17.jpg</li>
+		<li>images/image18.jpg</li>
+		<li>images/image19.jpg</li>
+		<li>images/image20.jpg</li>
+		
+		<li>images/image21.jpg</li>
+		<li>images/image22.jpg</li>
+		<li>images/image23.jpg</li>
+		<li>images/image24.jpg</li>
+		<li>images/image25.jpg</li>
+		<li>images/image26.jpg</li>
+		<li>images/image27.jpg</li>
+		<li>images/image28.jpg</li>
+		<li>images/image29.jpg</li>
+		<li>images/image30.jpg</li>
+		
+		<li>images/image31.jpg</li>
+		<li>images/image32.jpg</li>
+		<li>images/image33.jpg</li>
+		<li>images/image34.jpg</li>
+		<li>images/image35.jpg</li>
+		<li>images/image36.jpg</li>
+		<li>images/image37.jpg</li>
+		<li>images/image38.jpg</li>
+		<li>images/image39.jpg</li>
+		<li>images/image40.jpg</li>
+		
+		<li>images/image41.jpg</li>
+		<li>images/image42.jpg</li>
+		<li>images/image43.jpg</li>
+		<li>images/image44.jpg</li>
+		<li>images/image45.jpg</li>
+		<li>images/image46.jpg</li>
+		<li>images/image47.jpg</li>
+		<li>images/image48.jpg</li>
+		<li>images/image49.jpg</li>
+		<li>images/image50.jpg</li>
+	</div>
+	
+</body>
+
+</html>

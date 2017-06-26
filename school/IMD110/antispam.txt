@@ -1,0 +1,2 @@
+  <label><span class="red">  *</span>Anti-spam<span class="red"> 28 + 14 =</span></label>
+  <input name="addition"  id="formStyleInsert">

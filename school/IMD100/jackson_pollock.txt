@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>Class Exercise</title>
+	<link rel="stylesheet" type="text/css" href="group_exercise.css" />
+	<link rel="stylesheet" type="text/css" href="groupproject.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="class, exercise, week, 6" />
+	<meta name="description" content="Class Exercise" />
+	<meta name="author" content="Brandon Anthony" />
+	
+</head>

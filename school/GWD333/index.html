@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>GWD333</title>
+		<link rel="stylesheet" type="text/css" href="build.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="columnal.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="custom.css" media="screen" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script>
+			window.onload = style
+			$(window).resize(style);
+				
+			// changes the video, its title, subtitle, and citation
+			function insertVideo(index) {
+				var title	= document.getElementById('title');
+				var cite	= document.getElementById('cite');
+				var video 	= document.getElementById('video');
+				var data	= [
+					['<video width="640" height="360" poster="videos/printing_process_640.jpg" controls><source src="videos/printing_process_3.mp4" type="video/mp4"><source src="videos/printing_process_3.webm" type="video/webm"><source src="videos/printing_process_3.ogv" type="video/ogg"><object width="640" height="360" style="margin: 0 auto; display:block;"> <param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf"></param><param name="flashvars" value="src=http%3A%2F%2Fbstaxx.com%2Fschool%2Fgwd333%2Fvideos%2Fprinting_process_3.flv&poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="360" flashvars="src=http%3A%2F%2Fbstaxx.com%2Fschool%2Fgwd333%2Fvideos%2Fprinting_process_3.flv&poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg"></embed></object></video>',
+					
+					'<ul id="innerPlayerLabel" class="row"><li><h1>US Printing Process:&nbsp;&nbsp;</h1></li><li><h2>Uncover the Deception</h2></li></ul>',
+					
+					'<em>TOUR of the U.S. Fiat Currency PRINTING PRESS - New $100 USD Bill Being Printed & Packed.</em> 2012. Video. Youtube Web. 29 Oct 2013. &lt;http://www.youtube.com/watch?v=_7bIXkxOY4w&gt;.'],
+					
+					
+					['<video width="640" height="360" poster="videos/Gold-necklace_640.jpg" controls><source src="videos/ancient.mp4" type="video/mp4"><source src="videos/ancient.webm" type="video/webm"><source src="videos/ancient.ogv" type="video/ogg"><object width="640" height="360" style="margin: 0 auto; display:block;"> <param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf"></param><param name="flashvars" value="src=http%3A%2F%2Fbstaxx.com%2Fschool%2Fgwd333%2Fvideos%2Fancient.flv&poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="360" flashvars="src=http%3A%2F%2Fbstaxx.com%2Fschool%2Fgwd333%2Fvideos%2Fancient.flv&poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg"></embed></object></video>',
+					
+					'<ul id="innerPlayerLabel" class="row"><li><h1>Ancient Currencies:&nbsp;&nbsp;</h1></li><li><h2>Strange Money</h2></li></ul>',
+					
+					'<em>TOUR of the U.S. Fiat Currency PRINTING PRESS - New $100 USD Bill Being Printed & Packed.</em> 2012. Video. Youtube Web. 29 Oct 2013. &lt;http://www.youtube.com/watch?v=_7bIXkxOY4w&gt;.'],
+					
+					
+					['<video width="640" height="360" poster="videos/executive order_640.jpg" controls><source src="videos/end_of_gold.mp4" type="video/mp4"><source src="videos/end_of_gold.webm" type="video/webm"><source src="videos/end_of_gold.ogv" type="video/ogg"><object width="640" height="360" style="margin: 0 auto; display:block;"> <param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf"></param><param name="flashvars" value="src=http%3A%2F%2Fbstaxx.com%2Fschool%2Fgwd333%2Fvideos%2Fend_of_gold.flv&poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="360" flashvars="src=http%3A%2F%2Fbstaxx.com%2Fschool%2Fgwd333%2Fvideos%2Fend_of_gold.flv&poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg"></embed></object></video>',
+					
+					'<ul id="innerPlayerLabel" class="row"><li><h1>Ancient Currencies:&nbsp;&nbsp;</h1></li><li><h2>Strange Money</h2></li></ul>',
+					
+					'<em>TOUR of the U.S. Fiat Currency PRINTING PRESS - New $100 USD Bill Being Printed & Packed.</em> 2012. Video. Youtube Web. 29 Oct 2013. &lt;http://www.youtube.com/watch?v=_7bIXkxOY4w&gt;.'],
+					
+					
+					];
+				
+				video.innerHTML = data[index][0];
+				title.innerHTML = data[index][1];
+				//cite.innerHTML = data[index][3];
+			}
+		</script>
+		<!--[if gte IE 9]>
+		<style type="text/css">
+			.gradient {
+			filter: none;
+			}
+		</style>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div id="content" class="container">
+			<header class="row margin_bottom_30">
+				<div id="logo"></div>
+				<!--div id="title" class="col_9 last bg000 border">
+					<ul id="innerPlayerLabel" class="row">
+						<li><h1>Ancient Currencies:&nbsp;&nbsp;</h1></li><li><h2>Strange Money</h2></li>
+					</ul>
+				</div-->
+			</header>
+			<section id="outerVideoContainer" class="row margin_bottom_15 shadow">
+				<div id="innerVideoContainer">
+					<div id="video" class="">
+						<video width="640" height="360" poster="videos/Gold-necklace_640.jpg" preload="none" controls><source src="videos/ancient.mp4" type="video/mp4"><source src="videos/ancient.webm" type="video/webm"><source src="videos/ancient.ogv" type="video/ogg"><object width="640" height="360" style="margin: 0 auto; display:block;"> <param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf"></param><param name="flashvars" value="src=http%3A%2F%2Fbstaxx.com%2Fschool%2Fgwd333%2Fvideos%2Fancient.flv&poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="360" flashvars="src=http%3A%2F%2Fbstaxx.com%2Fschool%2Fgwd333%2Fvideos%2Fancient.flv&poster=http%3A%2F%2Fosmf.org%2Fimages%2Fposter_cathy_fmp.jpg"></embed></object></video>
+					</div>
+					<div id="outerThumbContainer" class="">
+						
+						<div class="innerThumbContainer first" onclick="insertVideo(1)">
+							<div class="image">
+								<img src="videos/Gold-necklace_120.jpg" alt="Egyptian Necklace">
+								<div class="outerThumbLabel" >
+									<div class="innerThumbLabel">
+										<h1>Ancient Currencies</h1>
+										<h2>Strange Money</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="innerThumbContainer" onclick="insertVideo(2)">
+							<div class="image">
+								<img src="videos/executive order_120.jpg" alt="executive order">
+								<div class="outerThumbLabel" >
+									<div class="innerThumbLabel">
+										<h1>End of the Gold Standard</h1>
+										<h2>Fiat currency</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="innerThumbContainer last" onclick="insertVideo(0)">
+							<div class="image">
+								<img src="videos/printing_process_120.jpg" alt="$100 bill negatives">
+								<div class="outerThumbLabel" >
+									<div class="innerThumbLabel">
+										<h1>US Printing Process</h1>
+										<h2>Uncover the Deception</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>Copyright 2013 | Contact: Brandon Anthony, Web Designer, BGAgolden15@aol.com</footer>
+	</body>

@@ -1,0 +1,19 @@
+/* styles.css */
+
+
+table td {
+	border-collapse:collapse;
+	text-align:left;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+table th, table td {
+	padding:10px;
+}
+
+.global {
+	font-weight:bold;
+}

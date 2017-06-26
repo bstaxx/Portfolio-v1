@@ -1,0 +1,215 @@
+/*booku_styles.css*/
+
+@import "reset.css";
+
+aside{
+	width: 21%;
+	height: 100%;
+	float: right;
+	background: #cdc;
+	padding: 2%;
+}
+
+aside a:link{
+	color: blue;
+}
+
+aside a:visited{
+	color: blue;
+}
+
+aside a:hover{
+	color: red;
+}
+
+#banner{
+	width: 100%;
+	background: rgb(51,51,51); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(51,51,51,1) 15%, rgba(114,87,87,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(15%,rgba(51,51,51,1)), color-stop(100%,rgba(114,87,87,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(51,51,51,1) 15%,rgba(114,87,87,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(51,51,51,1) 15%,rgba(114,87,87,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(51,51,51,1) 15%,rgba(114,87,87,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(51,51,51,1) 15%,rgba(114,87,87,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#725757',GradientType=0 ); /* IE6-9 */
+	overflow: hidden;
+	border-bottom: 1px solid black;
+	/*background: #ccc;
+	padding-bottom: 120px;*/
+}
+
+#banner iframe{
+	display: block;
+	border: 1px solid #725757;
+	margin: 60px auto 0 auto;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.80);
+	-moz-box-shadow:    0px 0px 20px rgba(0, 0, 0, 0.80);
+	box-shadow:        0px 0px 20px rgba(0, 0, 0, 0.80);
+}
+
+#banner section{
+	display: block;
+	padding: 0;
+	float: none;
+	width: 944px;
+	margin: 20px auto 0 auto;
+}
+
+body{
+	font-size: 12px;
+	font-family: arial;
+	/*background: black#FF0000MidnightBlue;
+	background: #604747;*/
+	background: #ccc;
+	color: white;
+}
+
+#container{
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+	color: black;
+	background: #eee;
+}
+
+footer{
+	max-width: 1600px;
+	margin: 0 auto;
+	color: white;
+	padding: 25px 0;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+footer li{
+	display: inline;
+	padding: 0 10px;
+	clear: both;
+}
+
+footer li a{
+	text-decoration: none;
+	color: white;
+}
+
+footer li a:hover{
+	color: red;
+}
+
+h1{
+	font-size: 2em;
+	padding-bottom: 1em;
+}
+
+header{
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+#headerContainer{
+	color: white;
+	overflow: hidden;
+}
+
+#navInnerWrapper img{
+	float: left;
+	height: 40px;
+	padding: 10px 0 10px 0;
+	/*
+	-webkit-filter: invert(100%); 
+	-webkit-filter: grayscale(1);  Google Chrome & Safari 6+*/  
+}
+
+#subtitle{
+	font-weight: normal;
+	color: #B8ABAB;
+}
+
+#navInnerWrapper nav{
+	float: right;
+	padding: 0;
+	margin: 23px 0;
+}
+
+#navInnerWrapper nav ul{
+	display: table-row;
+}
+
+#navInnerWrapper nav ul li{
+	display: table-cell;
+    vertical-align: middle;
+}
+
+#navInnerWrapper nav ul li a{
+	display: table-cell;
+    vertical-align: middle;
+}
+
+#navInnerWrapper{
+	width: 85%;
+	margin: auto;
+}
+
+#navOutterWrapper{
+	width: 100%;
+	/*height: 120px;*/
+	margin: auto;
+	
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	overflow: hidden;
+	background: rgba(51,51,51, 0);
+	/*background: black;#725757;*/
+}
+
+nav li{
+	display: inline;
+	
+}
+
+nav li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 15px;
+}
+
+nav li a:hover{
+	/*color: #B8ABAB;*/
+	background: #fcc;
+}
+
+section{
+	/*background: blue;*/
+	margin: 0 auto;
+	width: 71%;
+	height: 100%;
+	padding: 2%;
+	float: left;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper{
+	/*background: #604747;*/
+	background: #aaa;
+	max-width: 1600px;
+	overflow: hidden;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.80);
+	-moz-box-shadow:    0px 0px 20px rgba(0, 0, 0, 0.80);
+	box-shadow:        0px 0px 20px rgba(0, 0, 0, 0.80);
+}

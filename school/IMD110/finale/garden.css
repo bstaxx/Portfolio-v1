@@ -1,0 +1,134 @@
+/*Brandon Anthony*/
+
+body{
+	background-color: #fff;
+	margin-top:20px;
+	font-family:Arial; 
+	font-weight: normal; 
+	font-size: 16px; 	
+	color: #333333;
+
+}
+
+section, aside, header, footer, nav, figure, figcaption, article, hgroup{
+	display: block;
+}
+
+
+#wrapper {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px; 
+	/*background-color: #eff;*/
+	padding-bottom: 5em;
+}
+
+header{
+	text-align: right;
+	padding: 0.5em;
+	background-color: #ccc;
+}
+
+header h1{
+	text-align: center;
+	font-size: 1em;
+	margin-top: 1em;
+}
+
+header ul{
+	list-style: none;
+}
+
+header ul li{
+	display: inline;
+	margin-right: 2em;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+nav li a{
+	text-decoration: none;
+}
+
+section{
+	width: 63.66%;
+	padding: 5em 3% 0% 0%;
+	background-color: white;
+	float: left;
+}
+
+aside{
+	float: left;
+	width: 29.33%;
+	padding: 5em 0% 5em 3%;
+	background-color: white;
+	border-left: 1px solid #ccf;
+}
+
+footer{
+	/*width: 100%;*/
+	text-align: center;
+	padding: 2em;
+	background-color: #ccc;
+	/*overflow: hidden;
+	width: 100%;*/
+	clear: both;
+}
+
+footer h1{
+	font-size: 1em;
+}
+
+figure{
+	border: 1px solid #ccf;
+	float: right;
+	padding: 1em;
+	text-align: center;
+	margin: 0em 1em 1em 1em;
+}
+
+h1{
+	font-size: 1.3em;
+	margin-top: 0px;
+	font-weight: normal;
+}
+
+h2{
+	font-size: 1.2em;
+	margin-bottom: 0em;
+	font-weight: normal;
+}
+
+/* USE THE FOLLOWING INFORMATION AS A REFERENC ONLY 
+You can copy and paste from this list into your own selectors
+	
+light grey is #ccc
+
+selector{
+    position: relative;
+	float: left or right;
+	clear: both or left or right
+	font-weight: either bold or normal
+	font-size: em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-left-color : color;
+	border-left-style : solid;
+	border-left-width : 0px;
+	border-right-color : color;
+	border-right-style : solid;
+	border-right-width : 0px;
+	text-align: cent, left, right
+	background-color: color;
+	height: px;
+	width: px;
+}
+
+*/

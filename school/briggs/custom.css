@@ -1,0 +1,163 @@
+/*=============================================================================
+///////////////////////////////////////////////////////////////////////////////
+
+Desktop version layout - place your custom code here 
+
+///////////////////////////////////////////////////////////////////////////////
+=============================================================================*/
+
+/*===========================================================================
+									GENERAL
+===========================================================================*/
+body {
+	/*background: #770003; "Holy War" 
+	font-family: Arial;*/
+	font-size: 16px;
+}
+
+div, section, form {
+	overflow:hidden;
+}
+
+form, form table{width:100%;}
+td { 
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	padding:0;
+}
+table {
+	border-spacing:15px!important;
+	border-collapse:separate;
+}
+table .spacer{width:15px}
+
+td label{text-align:right; width:100%;display:block;}
+tr .start{padding-left:10px!important}
+tr .stop{padding-right:10px!important}
+tr .full{padding:5px 10px}
+
+html { 
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+table input {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	width:100%;
+	padding:15px;
+	border: 1px solid #aaa;
+}
+
+table input[type="radio"]{
+	display:inline-block;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	width:16px;
+	height:16px;
+	margin:0;
+	margin-right:5px;
+	
+}
+
+table input[type="submit"]{background:orange; color:white; font-weight:bold;}
+
+/*===========================================================================
+									ID's
+===========================================================================*/
+#logo{font-size:2em;}
+
+/*===========================================================================
+									CLASSES
+===========================================================================*/
+.float_right {float:right}
+.form .row{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	background:#eee;
+	max-width:600px;
+	margin:0 auto;
+	border-radius:7px;
+	border: 1px solid #aaa;
+}
+
+.form_admin .row{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	background:#eee;
+	max-width:980px;
+	margin:0 auto;
+	border-radius:7px;
+	border: 1px solid #aaa;
+}
+
+.label_radio{display:inline-block; width:auto; }
+.button{background:blue; color:white; text-align:center; vertical-align:middle; font-weight:bold; border-radius:7px; padding:15px 0;}
+.normal{font-size:16px}
+.survey th {background:#eee; color:#666;}
+.survey tr:nth-child(odd) { background-color:azure; }
+.survey tr:nth-child(even) { background-color:#fff; }
+.survey td { border:3px solid #aaa; vertical-align:middle; text-align:center;}
+.survey .question:hover {border:3px solid blue;}
+.survey .question {padding:10px; cursor:pointer;}
+.survey .selected {background:green!important; color:white; border:3px solid red;}
+.num {background:#ccc; color:#666; font-weight:bold; width:50px;}
+
+.admin th {background:#aaa; color:white; font-weight:bold;}
+
+
+/*===========================================================================
+									COLUMNAL SETTINGS
+===========================================================================*/
+.row {max-width: 980px;background:#eee;}
+.container {/*padding: 0 30px;*/}
+
+/*============================================================================
+//////////////////////////////////////////////////////////////////////////////
+
+Mobile version - single break point 
+
+//////////////////////////////////////////////////////////////////////////////
+============================================================================*/
+
+@media handheld, only screen and (max-width: 767px) {
+/*===========================================================================
+									COLUMNAL SETTINGS
+===========================================================================*/
+td {/* padding:10px;*/}
+tr .start{padding-left:0!important}
+tr .stop{padding-right:0!important}
+tr .full{/**/}
+}
+
+
+
+
+
+
+/*============================================================================
+//////////////////////////////////////////////////////////////////////////////
+
+Provide higher res assets for higher resolution mobile screens 
+
+//////////////////////////////////////////////////////////////////////////////
+============================================================================*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+	/* An example of how to override an image with one twice the size for iPhone 4. Specify the original pixel size with background-size.
+	.download {
+	background: url(../img/downarrow@2x.png) no-repeat;
+	background-size: 27px 28px;
+	}
+	*/
+
+}

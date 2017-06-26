@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<meta name="keywords" content="Miami Florida beach birds bird watching equipment cameras image quality compare">
+
+<meta name="description" content="Contact the Beachbirds staff">
+
+<meta name="author" content="Brandon G. Anthony">
+
+
+<!--[if lt IE 9]>
+<script src="js/adjustForIE.js" type="text/javascript"></script>
+</script>
+<![endif]-->
+
+<link href="miami.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="container">
+	
+		<header>
+			<div id="nav_container">
+				<nav>
+					<a href="index.html"><img src="images/beachbirdshome.png" alt="Illustration of a bird's head with the words 'beach birds' on top of it."></a>
+					<ul class="navlink">
+						<li><a href="index.html">Home</a></li><li> |</li>
+						<li><a href="equipment.html">Equipment</a></li><li>|</li>
+						<li><a href="populations.html">Populations</a></li><li>|</li>
+						<li><a href="places.html">Places</a></li><li> |</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>	
+		</header>
+		
+		<div id="content">
+			
+			<h1>Contact</h1><br><br>
+			
+			<div class="grid_3">
+			<form action="php/email.php" method="post" id="comments">
+				
+				<label>Name</label>
+				<input type="text" name="name" id="author-name" class="formStyle" required><br>
+				
+				<label>Email Address</label>
+				<input type="email" name="email"  id="email" class="formStyle" required><br>
+
+				<label>Comments / Questions</label>
+				<textarea name="comments" class="formStyle" rows="6" required ></textarea><br>
+
+				<label><span class="red">  *</span>Anti-spam<span class="red"> 28 + 14 =</span></label>
+				<input name="addition"  id="formStyleInsert"><br>
+
+				<input name="submit" type="submit" id="submitForm"  value="SEND">
+				
+			</form> 
+			</div>
+			
+			<div class="grid_3">
+			<img src="images/gamblerogers.jpg" class="contact" alt="Gambler Rogers National Park">
+			</div>
+		</div>
+		
+	</div>
+	
+	<footer class="grid_6">
+		
+		<ul id="footerlink" class="navlink">
+			<li><a href="index.html">Home</a></li><li> |</li>
+			<li><a href="equipment.html">Equipment</a></li><li> |</li>
+			<li><a href="populations.html">Populations</a></li><li> |</li>
+			<li><a href="places.html">Places</a></li><li> |</li>
+			<li><a href="contact.html">Contact</a></li><li> |</li>
+			<li><a href="../index.html">Portal Page</a></li>
+		</ul>
+		
+		&copy; Copyright 2013 Brandon G. Anthony
+	
+	</footer>
+
+
+</body>
+</html>

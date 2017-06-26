@@ -1,0 +1,220 @@
+/*parallax.css*/
+
+/********************************************************************************************
+
+									General Styles
+
+********************************************************************************************/
+
+body {
+padding: 0;
+margin: 0;
+min-width: 980px;
+font-family: arial;
+font-size: 12px;
+}	
+
+h1 {
+margin-bottom: 15px;
+font-size: 2em;
+/*font-family: 'Stardos Stencil', cursive;*/
+}
+
+hh {
+color: #facece;
+}
+
+p {
+margin-top: 0px;
+font-size: 1em;
+font-family: 'Libre Baskerville', serif;
+}
+
+.index { font-weight: normal; }
+
+/********************************************************************************************
+
+									Specific Styles
+
+********************************************************************************************/
+
+#container {
+position: absolute;
+width: 1280px;
+margin: 0 auto;
+height: 720px;
+background: rgb(55,94,221); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(55,94,221,1) 0%, rgba(149,167,221,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,94,221,1)), color-stop(100%,rgba(149,167,221,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(55,94,221,1) 0%,rgba(149,167,221,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(55,94,221,1) 0%,rgba(149,167,221,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(55,94,221,1) 0%,rgba(149,167,221,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(55,94,221,1) 0%,rgba(149,167,221,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#375edd', endColorstr='#95a7dd',GradientType=0 ); /* IE6-9 */
+}
+
+#logo {
+width: 127px;
+position: absolute;
+top: 5%;
+left: 23px;
+}
+	
+	
+/* PARALLAX BACKGROUND
+==================================================================================================*/
+#back{
+position: absolute !important;
+width: 100%;
+height: 500px;
+bottom: 0;
+left: 0;
+background: url(back2.png) repeat-x 20% 0;
+opacity: 0.5;
+}
+
+#mid{
+position: absolute !important;
+width: 100%;
+height: 500px;
+bottom: 0;
+left: 0;
+background: url(mid2.png) repeat-x 40% 0;
+opacity: 0.5;
+}
+
+#fore{
+position: absolute !important;
+width: 100%;
+height: 500px;
+bottom: 0;
+left: 0;
+background: url(fore2.png) repeat-x 60% 0;
+opacity: 0.5;
+}
+
+
+/* NAVIGATION
+==================================================================================================*/
+.navWrapper { 
+width: 150px;
+height: 100%;
+position: absolute !important;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none; 
+}
+
+.buttons {
+width: 127px;
+height: 127px;
+position: absolute !important;
+bottom: 300px;
+margin-bottom: 0px;
+background-color: rgba(0,0,0,0.1);
+color: #fff;
+-moz-border-radius: 20px;
+border-radius: 20px;
+cursor:pointer;
+display: table;
+}
+	
+.buttontext {
+cursor:pointer;
+display: table-cell;
+font-size: 28px;
+font-weight: bold;
+vertical-align: middle;
+text-align: center;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+#back_button_wrapper{
+background-image: linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+background-image: -o-linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+background-image: -moz-linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+background-image: -webkit-linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+background-image: -ms-linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+background-image: -webkit-gradient(linear, left bottom,right bottom, color-stop(0,rgba(0,0,0,0.25)), color-stop(0.90,rgba(0,0,0,0)));
+}
+
+	#back_button{
+	margin-left: 23px;
+	background-image: linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+	background-image: -o-linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+	background-image: -moz-linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+	background-image: -webkit-linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+	background-image: -ms-linear-gradient(left , rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 90%);
+	background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0,rgba(0,0,0,0.25)), color-stop(0.90,rgba(0,0,0,0)));
+	}
+
+#next_button_wrapper{
+right: 0px;
+background-image: linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+background-image: -o-linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+background-image: -moz-linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+background-image: -webkit-linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+background-image: -ms-linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.1,rgba(0,0,0,0)), color-stop(1,rgba(0,0,0,0.25)));
+}
+	#next_button{
+	margin-right: 23px;
+	background-image: linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+	background-image: -o-linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+	background-image: -moz-linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+	background-image: -webkit-linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+	background-image: -ms-linear-gradient(left , rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%);
+	background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.1,rgba(0,0,0,0)), color-stop(1,rgba(0,0,0,0.25)));
+	}
+
+
+/* CONTENT
+==================================================================================================*/
+#text{
+width: 27.5%;
+height: 90%;
+position: absolute !important;
+top: 5%;
+margin-left: 0;
+left: 60%;
+background-color: rgba(0,0,0,0.6);
+color: #fff;
+padding: 0px 15px;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+#statsContainer{
+width: 46.6%;
+height: 32.5%;
+background-color: rgba(0,0,0,0.6);
+position: absolute !important;
+top: 62.5%;
+margin-left:-35%;
+left: 47.5%;/**/
+padding: 0px 15px;
+color: #fff;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+	#statsContainer img {
+	width:100%;
+	margin-top:15px;
+	}
+
+#image{
+width: 46.6%;
+height: 55%;
+position: absolute !important;
+top: 5%;
+left: 12.5%;
+}

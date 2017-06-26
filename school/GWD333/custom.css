@@ -1,0 +1,169 @@
+/*=============================================================================
+///////////////////////////////////////////////////////////////////////////////
+
+Desktop version layout - place your custom code here 
+
+///////////////////////////////////////////////////////////////////////////////
+=============================================================================*/
+
+/*===========================================================================
+									THEME
+===========================================================================*/
+:root {
+	var-beige: #F5EFDC; /* moonbeam */
+	var-tan: #D1C9B0; /* suggestion */
+	var-brown: #BCB48D; /* toasted */
+	var-green: #759872; /* sade */
+	var-darkGreen: #516A4F; /* wasabi pistachio */
+}
+
+/*===========================================================================
+									GENERAL
+===========================================================================*/
+
+
+/*	COLORS
+----------------------------------------------------------------------------	
+	moonbeam (beige) = F5EFDC or rgba(245, 239, 220, 1)
+	suggestion (tan) = D1C9B0 or rgba(209, 201, 176, 1)
+	toasted (brown) = BCB48D or rgba(188, 180, 141, 1)
+	sade (green) = 759872 or rgba(117, 152, 114, 1)
+	Wasabi Pistachio (dark green) = 516A4F or rgba(81, 106, 79, 1)
+
+*/
+
+
+
+body {
+background:#516A4F;
+font-family: helvetica;
+font-size: 16px;
+line-height:.5;
+}
+
+header		{ padding:0;  }
+header img	{ margin:0; }
+
+/*===========================================================================
+									ID's
+===========================================================================*/
+#content {
+	/*background: #666;*/
+	padding:20px 0 60px 0;
+	background: #D1C9B0;
+
+
+}
+#logo { padding:0; height: 100px; background: #BCB48D; }
+
+#title { height:83px; }
+	#title ul { list-style:none; width:100%; text-align:center; }
+	#title ul li { display:inline-block; margin:0; }
+	#title h1, #title h2 { font-size:20px; color:white; } 
+
+#outerVideoContainer { padding:0; width:960px; height: 360px; }
+	#innerVideoContainer {  }
+		#video { float:left; }
+		#outerThumbContainer { float:right; width:320px; height: 360px; overflow: hidden; }
+		#outerThumbContainer .innerThumbContainer { 
+			width:100%;
+			height:120px;
+			margin:0 auto;
+			box-sizing: border-box;/**/
+            padding: 10px 10px 10px 15px;
+			/*border-bottom: 2px solid black;
+			border-top: 1px solid black;
+			border-left: 3px solid black;
+			-webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+			-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+			box-shadow: rgba(0,0,0,0.3) 0 1px 2px;*/
+			
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(245, 239, 220, .2)), color-stop(0.1, rgba(245, 239, 220, 0)), color-stop(0.9, rgba(245, 239, 220, 0)), to(rgba(245, 239, 220, .45))),
+                        -webkit-gradient(linear, 0 0, 100% 0, from(rgba(245, 239, 220, .2)), color-stop(0.03, rgba(245, 239, 220, 0)), color-stop(0.97, rgba(245, 239, 220, 0)), to(rgba(245, 239, 220, .2))),
+                        url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRF…x%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC') no-repeat 50% 50%, 
+                        -webkit-gradient(linear, 0 0, 0 100%, from(#F5EFDC), color-stop(0.5, #D1C9B0), color-stop(0.51, #D1C9B0), to(#BCB48D));
+            background: #222;
+        }
+
+		/*#outerThumbContainer .first { border-top: none; }
+		#outerThumbContainer .last { border-bottom: none; }*/
+		#outerThumbContainer .innerThumbContainer:hover { background: #759872; cursor:pointer; }
+		#outerThumbContainer .innerThumbContainer .image { position: relative; height: 100%; /*position:absolute;*/ margin: 0; }
+		#outerThumbContainer .innerThumbContainer .image img { border: 1px solid #666; width: 120px; margin:0; }
+		#outerThumbContainer .innerThumbContainer .image .outerThumbLabel {
+			position:absolute;
+			/*display: none;*/
+			top:0; width:100%;
+			height:100%;
+		}
+		.outerThumbLabel h1, .outerThumbLabel h2 { font-size:12px; margin:0; }
+		#outerThumbContainer .innerThumbContainer .image .outerThumbLabel .innerThumbLabel { color:white; position:absolute; top:0; left: 130px; width:180px; padding:0; }
+footer { text-align:center; color:white; padding-top:30px; }
+/*===========================================================================
+									CLASSES
+===========================================================================*/
+
+/*===========================================================================
+									COLUMNAL SETTINGS
+===========================================================================*/
+.row {width:960px; /*overflow:hidden;*/}
+
+.height { height:100px; }
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12, .row {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.border {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+border: 1px solid #F5EFDC;
+}
+
+.shadow{
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+}
+
+
+/*============================================================================
+//////////////////////////////////////////////////////////////////////////////
+
+Mobile version - single break point 
+
+//////////////////////////////////////////////////////////////////////////////
+============================================================================*/
+
+@media handheld, only screen and (max-width: 767px) {
+/*===========================================================================
+									COLUMNAL SETTINGS
+===========================================================================*/
+	
+
+
+
+
+
+
+/*============================================================================
+//////////////////////////////////////////////////////////////////////////////
+
+Provide higher res assets for higher resolution mobile screens 
+
+//////////////////////////////////////////////////////////////////////////////
+============================================================================*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+	/* An example of how to override an image with one twice the size for iPhone 4. Specify the original pixel size with background-size.
+	.download {
+	background: url(../img/downarrow@2x.png) no-repeat;
+	background-size: 27px 28px;
+	}
+	*/
+
+}

@@ -1,0 +1,225 @@
+/*=============================================================================
+///////////////////////////////////////////////////////////////////////////////
+
+Desktop version layout - place your custom code here 
+
+///////////////////////////////////////////////////////////////////////////////
+=============================================================================*/
+
+/*===========================================================================
+									GENERAL
+===========================================================================*/
+/*@font-face {
+	font-family: GandhiSerif-Regular;
+	src: url(../fonts/GandhiSerif-Regular.otf);
+}*/
+
+
+
+body {
+	background: #770003;/* "Holy War" */
+	font-family: Arial;
+	font-size: 16px;
+}
+
+div, img {
+	/*overflow: hidden; */
+	margin: 0; 
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {/*font-family: GandhiSerif-Regular;*/ color:#770003; }
+
+nav a {
+	font-size: 1em;
+	float:right;
+	text-align: center;
+	color: #770003;
+	list-style: none;
+	display:block;
+	/**/font-weight:bold;
+	padding:15px 0;
+	margin: 0;
+	overflow:hidden;
+	width:25%;
+	border-top: 1.6px solid #770003;
+	border-bottom: 1.6px solid #770003;
+}
+
+input[type="text"], textarea{
+	padding:5px; 
+	/*font-size:1.3em; 
+	font-family:Arial, sans-serif; */
+	color:black; 
+	background:#eee;
+	border:none; 
+	border: 2px solid #aaa;/**/
+	margin:0; 
+	margin-bottom:15px;
+	width:100%;
+	box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box; 
+	
+}
+
+nav a:visited {color:#770003;}
+
+nav a:hover {background:#FFECC3!important; color:#770003; text-decoration:none;}
+
+nav a.selected {background-color:#770003; color:white!important;}
+
+nav a.selected:hover{background-color:#FFECC3!important; color:#770003!important;}
+
+nav a li {margin:0;}
+
+nav ul {overflow:hidden; color:white;}
+
+.no_bullet {list-style:none;}
+.no_bullet li{margin-bottom:15px}
+.pointer {cursor:pointter}
+
+
+/*===========================================================================
+									ID's
+===========================================================================*/
+#content{/*background:white; width: 920px; margin: 0 auto;*/}
+#copyright{text-align:center; margin-bottom:60px;}
+#donate {
+	background: rgb(208,119,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(208,119,0,1) 0%, rgba(145,87,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(208,119,0,1)), color-stop(100%,rgba(145,87,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(208,119,0,1) 0%,rgba(145,87,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(208,119,0,1) 0%,rgba(145,87,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(208,119,0,1) 0%,rgba(145,87,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(208,119,0,1) 0%,rgba(145,87,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d07700', endColorstr='#915700',GradientType=0 ); /* IE6-9 */
+}
+
+#donate:hover { background:rgb(255,149,10)}
+
+#footer {
+	color:white;
+	font-size:12px;/**/
+}
+
+#footer h1 {color:white; font-size:1.5em; width:100%; padding-bottom:15px; border-bottom:1px solid white; text-align:right;/*border-top:1px solid white;*/}
+/*#footer ul li{line-height:1.2em;list-style:none;margin:0;}*/
+
+#header {/**/}
+#join {background:rgb(0, 0, 179)}
+#join:hover{background:rgb(0, 0, 255)}
+#wrapper{
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,236,195,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,236,195,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,236,195,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,236,195,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,236,195,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,236,195,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffecc3',GradientType=0 ); /* IE6-9 */
+	background:white;
+	overflow:hidden;
+	padding-bottom:105px;
+}
+/*===========================================================================
+									CLASSES
+===========================================================================*/
+.hh {min-height: 100px;}
+.theme-bar.slider-wrapper {border: none!important;} /* ROMOVE border from slider */
+.milk {background: #FFECC3;}
+.milk div, .milk p, .milk h1, .milk h2, .milk ul{
+	margin-left:15px;
+	margin-right:15px;
+}
+.actionBtn {
+	color:white;
+	/*background:#770003;*/
+	margin-right: 5%;
+	float:left;
+	text-align:center;
+	padding:10px 0;
+	border-radius:8px;
+	margin-top:36px;
+	font-size:1.2em;
+	cursor:pointer
+	/*font-weight:bold;*/
+}
+
+.contact {
+	width:100%;
+}
+
+.table_spacer {
+	width:15px;
+}
+
+/*===========================================================================
+									COLUMNAL SETTINGS
+===========================================================================*/
+.row {max-width: 980px;}
+.container {padding: 0 30px;}
+
+
+
+
+
+
+/*============================================================================
+//////////////////////////////////////////////////////////////////////////////
+
+Mobile version - single break point 
+
+//////////////////////////////////////////////////////////////////////////////
+============================================================================*/
+
+@media handheld, only screen and (max-width: 767px) {
+/*===========================================================================
+									COLUMNAL SETTINGS
+===========================================================================*/
+	.container {padding: 0;}	
+	.examplecontainer {}
+	
+	nav a {background:black; color:white!important;}
+	
+	nav a:hover {background:#770003;}
+	
+	nav a.selected {background-color:#770003;}
+	
+	nav a.selected:hover{background-color:#770003!important; color:white!important;}
+	
+	
+	
+	body {font-size:.5em; color:white;}
+	h1, h2{color:white;}
+	
+	
+	
+	#content {background:#770003;}
+	#footer {background:black;}
+}
+
+
+
+
+
+
+/*============================================================================
+//////////////////////////////////////////////////////////////////////////////
+
+Provide higher res assets for higher resolution mobile screens 
+
+//////////////////////////////////////////////////////////////////////////////
+============================================================================*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+	/* An example of how to override an image with one twice the size for iPhone 4. Specify the original pixel size with background-size.
+	.download {
+	background: url(../img/downarrow@2x.png) no-repeat;
+	background-size: 27px 28px;
+	}
+	*/
+
+}
